@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Hero Section */
+#hero {
+  background-color: #e9ecef;
+  padding: 4em 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+/* Sections */
+section {
+  padding: 3em 0;
+}
+
+section h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+/* Buttons */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  border: none; /* Remove default border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  padding: 0.75em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 1em;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  #hero h2 {
+    font-size: 2em;
+  }
+}
